@@ -1,11 +1,13 @@
 export default function Projects() {
     return (
-        <section id="projetos">
-            <h2>Projetos</h2>
+        <section id="projetos" className="section">
+            <div className="page-container">
+                <h2 className="section-title">Projetos</h2>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, error.
-            </p>
+                <p className="section-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nostrum!
+                </p>
+            </div>
         </section>
     );
 }
