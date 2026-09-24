@@ -77,6 +77,101 @@ textarea {
   font-size: 1rem;
 }
 
+.hero {
+  padding: 96px 0 72px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero .page-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: #f3f0ff;
+  color: var(--accent);
+
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title {
+  margin: 0;
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.hero-role {
+  margin: 4px 0 0;
+
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero-description {
+  max-width: 620px;
+  margin: 0;
+
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  background: var(--background);
+  color: var(--foreground);
+
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  transition:
+          border-color 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
 @media (max-width: 640px) {
   .page-container {
     width: min(100% - 32px, var(--content-width));
@@ -84,5 +179,22 @@ textarea {
 
   .section {
     padding: 56px 0;
+  }
+
+  .hero {
+    padding: 72px 0 56px;
+  }
+
+  .hero .page-container {
+    flex-direction: column;
+  }
+
+  .hero-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
   }
 }
