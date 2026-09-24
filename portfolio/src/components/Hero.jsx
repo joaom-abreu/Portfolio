@@ -11,7 +11,7 @@ export default function Hero() {
 
                 <div className="hero-content">
                     <div>
-                        <h1 className="hero-title">João Mário</h1>
+                        <h1 className="hero-title">João Mário Abreu</h1>
                         <p className="hero-role">Software Engineering Student</p>
                     </div>
 
