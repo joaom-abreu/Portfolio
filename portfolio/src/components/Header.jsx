@@ -1,3 +1,5 @@
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+
 export default function Header() {
     return (
         <header className="site-header">
@@ -6,12 +8,16 @@ export default function Header() {
                     João Abreu
                 </a>
 
-                <nav className="header-nav" aria-label="Navegação principal">
-                    <a href="#sobre">Sobre</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#experiencias">Experiências</a>
-                    <a href="#contato">Contato</a>
-                </nav>
+                <div className="header-actions">
+                    <nav className="header-nav" aria-label="Navegação principal">
+                        <a href="#sobre">Sobre</a>
+                        <a href="#projetos">Projetos</a>
+                        <a href="#experiencias">Experiências</a>
+                        <a href="#contato">Contato</a>
+                    </nav>
+
+                    <LanguageSwitcher />
+                </div>
             </div>
         </header>
     );
