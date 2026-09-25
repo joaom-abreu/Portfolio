@@ -216,7 +216,7 @@ textarea {
 .hero .page-container {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 32px;
 }
 
 .hero-avatar {
@@ -225,8 +225,8 @@ textarea {
   align-items: center;
   justify-content: center;
 
-  width: 64px;
-  height: 64px;
+  width: 112px;
+  height: 112px;
 
   border: 1px solid var(--border);
   border-radius: 50%;
@@ -234,7 +234,7 @@ textarea {
   background: #f3f0ff;
   color: var(--accent);
 
-  font-size: 1rem;
+  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -321,8 +321,8 @@ textarea {
   }
 
   .hero-avatar {
-    width: 56px;
-    height: 56px;
+    width: 96px;
+    height: 96px;
   }
 
   .hero-title {
